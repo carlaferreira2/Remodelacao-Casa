@@ -3,154 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Remodelação Imbatível – Remodelações Porto & Aveiro</title>
+  <meta name="description" content="Remodelação Imbatível - especialistas em transformar casas em lares confortáveis e modernos nas zonas do Porto e Aveiro." />
+  <title>Remodelação Imbatível | Remodelações Porto e Aveiro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      color: #333;
-    }
-    header {
-      background-color: #2c2c2c;
-      color: white;
-      padding: 2.5rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #444;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-    section {
-      padding: 3rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .service {
-      background: white;
-      flex: 1 1 calc(33% - 2rem);
-      padding: 1.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .gallery img {
-      max-width: 48%;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .testimonials {
-      background: #efefef;
-      padding: 2rem;
-      border-radius: 8px;
-    }
-    .testimonial {
-      margin-bottom: 1.5rem;
-    }
-    footer {
-      background: #2c2c2c;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) {
-      .services, .gallery {
-        flex-direction: column;
-      }
-      .service, .gallery img {
-        flex: 1 1 100%;
-      }
-    }
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #fdfdfd; color: #1c1c1c; }
+    header { background: #fff8f0; padding: 2rem 1rem; text-align: center; }
+    header h1 { font-family: 'Playfair Display', serif; color: #c6a972; font-size: 2.5rem; margin: 0; }
+    header p { margin: 0.5rem 0 0; font-size: 1.1rem; }
+    nav { background: #fff; padding: 1rem; text-align: center; border-bottom: 1px solid #eee; }
+    nav a { margin: 0 1rem; color: #333; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #c6a972; }
+    section { padding: 3rem 1rem; max-width: 960px; margin: auto; }
+    h2 { font-family: 'Playfair Display', serif; color: #c6a972; text-align: center; margin-bottom: 2rem; }
+    .cta { display: inline-block; margin-top: 1.5rem; background: #c6a972; color: white; padding: 0.8rem 1.4rem; border-radius: 6px; font-weight: bold; text-decoration: none; }
+    .floating-button { position: fixed; bottom: 20px; right: 20px; background: #c6a972; color: white; padding: 0.8rem 1.2rem; border-radius: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 999; text-decoration: none; font-weight: bold; animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.08); } 100% { transform: scale(1); } }
+    footer { text-align: center; padding: 2rem 1rem; background: #f2f2f2; font-size: 0.9rem; color: #777; }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Remodelação Imbatível</h1>
-    <p>Transformamos Espaços. Superamos Expectativas.</p>
+    <h1>Transformamos Casas em Lares Imbatíveis</h1>
+    <p>Especialistas em Remodelações no Porto e Aveiro</p>
   </header>
+
   <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#galeria">Antes & Depois</a>
-    <a href="#testemunhos">Testemunhos</a>
-    <a href="#contacto">Contacto</a>
+    <a href="index.html">Início</a>
+    <a href="blog.html">Blog</a>
+    <a href="artigos.html">Artigos</a>
+    <a href="para-quem-e.html">Para quem é</a>
+    <a href="#orcamento">Orçamento</a>
   </nav>
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>
-      A Remodelação Imbatível é uma empresa especializada em renovar casas com excelência, rapidez e atenção ao detalhe. Atendemos clientes no Porto, Vila Nova de Gaia, Espinho, Feira, Ovar e Aveiro. A nossa missão é criar espaços funcionais, modernos e confortáveis, adaptados ao estilo de vida de cada cliente.
-    </p>
+
+  <section>
+    <h2>🔧 Pacotes de Serviços</h2>
+    <p>Oferecemos soluções para todos os tipos de clientes. Desde pacotes económicos para investidores até soluções chave na mão para famílias e estrangeiros.</p>
+    <ul>
+      <li>💡 Económico</li>
+      <li>⭐ Premium</li>
+      <li>🔑 Chave na Mão</li>
+    </ul>
+    <a href="pacotes-servicos.html" class="cta">Ver detalhes dos pacotes</a>
   </section>
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Remodelações Completas</h3>
-        <p>Transformamos apartamentos e moradias com soluções personalizadas.</p>
-      </div>
-      <div class="service">
-        <h3>Cozinhas e Casas de Banho</h3>
-        <p>Recriamos espaços modernos, funcionais e com materiais de alta qualidade.</p>
-      </div>
-      <div class="service">
-        <h3>Pinturas & Isolamentos</h3>
-        <p>Pintura interior/exterior e aplicação de soluções térmicas e acústicas.</p>
-      </div>
-      <div class="service">
-        <h3>Pequenas Obras</h3>
-        <p>Desde reparações a melhorias específicas, tratamos de tudo com rigor.</p>
-      </div>
-    </div>
+
+  <section>
+    <h2>💬 Testemunhos de Clientes</h2>
+    <p>“A nossa casa ficou irreconhecível. E tudo dentro do orçamento!” – Pedro & Ana, Gaia</p>
+    <p>“Profissionais, rápidos e com atenção ao detalhe.” – Joana, Aveiro</p>
   </section>
-  <section id="galeria">
-    <h2>Antes & Depois</h2>
-    <p>Veja como transformamos espaços antigos em casas modernas e acolhedoras.</p>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1560448070-cd97f6e4e4e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Antes - Cozinha Antiga">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Depois - Cozinha Moderna">
-      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Antes - Casa de Banho Antiga">
-      <img src="https://images.unsplash.com/photo-1623718771764-3bfb6cbfe85a?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Depois - Casa de Banho Renovada">
-    </div>
+
+  <section>
+    <h2>📚 Últimos Artigos</h2>
+    <ul>
+      <li><a href="artigos.html">Quanto custa remodelar uma casa?</a></li>
+      <li><a href="artigos.html">Materiais ideais para renovar com estilo</a></li>
+    </ul>
+    <a href="artigos.html" class="cta">Ler mais artigos</a>
   </section>
-  <section id="testemunhos">
-    <h2>Testemunhos</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <strong>Rui, Vila Nova de Gaia:</strong> "A equipa foi impecável. Cumpriram prazos e o resultado ficou incrível."
-      </div>
-      <div class="testimonial">
-        <strong>Ana, Espinho:</strong> "Transformaram a nossa cozinha completamente. Ficou moderna e funcional."
-      </div>
-      <div class="testimonial">
-        <strong>João, Aveiro:</strong> "Excelente relação qualidade/preço. Recomendo vivamente."
-      </div>
-    </div>
+
+  <section id="orcamento">
+    <h2>📞 Peça o Seu Orçamento</h2>
+    <p>Conte-nos o que precisa e entraremos em contacto rapidamente.</p>
+    <a class="cta" href="https://wa.me/351912345678">📲 Fale no WhatsApp</a>
   </section>
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Telefone: +351 912 345 678</p>
-    <p>Email: geral@remodelacaoimbativel.pt</p>
-    <p>WhatsApp: <a href="https://wa.me/351912345678" target="_blank">Enviar mensagem</a></p>
-  </section>
+
+  <a href="https://wa.me/351912345678" class="floating-button">✨ Orçamento Grátis</a>
+
   <footer>
-    <p>&copy; 2025 Remodelação Imbatível. Todos os direitos reservados. Porto & Aveiro.</p>
+    © 2025 Remodelação Imbatível. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
