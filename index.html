@@ -1,201 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Remodelação Imbatível - especialistas em transformar casas em lares confortáveis e modernos nas zonas do Porto e Aveiro." />
-  <title>Remodelação Imbatível | Remodelações Porto e Aveiro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carla Ferreira | Mentoria de Negócios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
-
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fdfdfd;
-      color: #1c1c1c;
+      font-family: 'Inter', sans-serif;
+      background-color: #F9F9F9;
+      color: #1C1C1C;
+      line-height: 1.6;
     }
-
     header {
-      background: #fff8f0;
-      padding: 2rem 1rem;
+      background: #2C3E9F;
+      color: white;
+      padding: 3rem 1rem;
       text-align: center;
     }
-
     header h1 {
       font-family: 'Playfair Display', serif;
-      color: #c6a972;
       font-size: 2.5rem;
-      margin: 0;
+      margin: 0 0 1rem;
     }
-
     header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
-
-    nav {
-      background: #fff;
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 1px solid #eee;
-      flex-wrap: wrap;
-    }
-
-    nav a {
+    .btn {
       display: inline-block;
-      margin: 0.5rem 0.8rem;
-      color: #333;
+      background: #F39C12;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
+      font-weight: bold;
     }
-
-    nav a:hover {
-      color: #c6a972;
-    }
-
     section {
       padding: 3rem 1rem;
-      max-width: 960px;
+      max-width: 1100px;
       margin: auto;
     }
-
     h2 {
       font-family: 'Playfair Display', serif;
-      color: #c6a972;
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
+      color: #2C3E9F;
+      margin-bottom: 1rem;
+      font-size: 2rem;
     }
-
-    ul {
-      padding-left: 1.2rem;
+    .pain-points, .services, .testimonials {
+      display: grid;
+      gap: 1.5rem;
     }
-
-    .cta {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background: #c6a972;
-      color: white;
-      padding: 0.8rem 1.4rem;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-
-    .floating-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #c6a972;
-      color: white;
-      padding: 0.8rem 1.2rem;
-      border-radius: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      z-index: 999;
-      text-decoration: none;
-      font-weight: bold;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.08); }
-      100% { transform: scale(1); }
-    }
-
     footer {
+      background: #2C3E9F;
+      color: white;
       text-align: center;
       padding: 2rem 1rem;
-      background: #f2f2f2;
-      font-size: 0.9rem;
-      color: #777;
+      margin-top: 3rem;
     }
-
-    /* MOBILE RESPONSIVE */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      nav {
-        padding: 0.5rem;
-      }
-
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-
-      .cta {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-      }
-
-      .floating-button {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-      }
+    footer a {
+      color: #F39C12;
+      text-decoration: none;
+      margin: 0 0.5rem;
     }
   </style>
 </head>
 <body>
 
+  <!-- Hero -->
   <header>
-    <h1>Transformamos Casas em Lares Imbatíveis</h1>
-    <p>Especialistas em Remodelações no Porto e Aveiro</p>
+    <h1>Apresente-se com confiança. Atraia mais clientes. Aumente as suas vendas.</h1>
+    <p>Ajudo pequenos empresários a transformar a forma como comunicam para conquistarem clientes e aumentarem receitas.</p>
+    <a href="#guia" class="btn">Receber Guia Gratuito</a>
   </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="blog.html">Blog</a>
-    <a href="artigos.html">Artigos</a>
-    <a href="para-quem-e.html">Para quem é</a>
-    <a href="#orcamento">Orçamento</a>
-  </nav>
-
+  <!-- Pain Points -->
   <section>
-    <h2>🔧 Pacotes de Serviços</h2>
-    <p>Oferecemos soluções para todos os tipos de clientes. Desde pacotes económicos para investidores até soluções chave na mão para famílias e estrangeiros.</p>
+    <h2>Reconhece algum destes desafios?</h2>
+    <div class="pain-points">
+      <div class="card">😅 Sente insegurança ao falar do seu negócio</div>
+      <div class="card">📣 Investe em marketing mas não gera clientes</div>
+      <div class="card">💰 Tem contactos mas não consegue fechar vendas</div>
+    </div>
+  </section>
+
+  <!-- Promise -->
+  <section>
+    <h2>De inseguro(a) a vendedor(a) confiante em 30 dias.</h2>
+    <p>Com o método certo, consegue comunicar de forma clara, criar conexões reais e transformar apresentações em vendas.</p>
     <ul>
-      <li>💡 Económico</li>
-      <li>⭐ Premium</li>
-      <li>🔑 Chave na Mão</li>
+      <li>📈 Aprenda a comunicar com impacto</li>
+      <li>🚀 Atraia clientes ideais sem esforço</li>
+      <li>💡 Transforme reuniões em oportunidades de venda</li>
     </ul>
-    <a href="pacotes-servicos.html" class="cta">Ver detalhes dos pacotes</a>
   </section>
 
+  <!-- Lead Magnet -->
+  <section id="guia">
+    <h2>Descubra o que está a travar o crescimento do seu negócio 🚀</h2>
+    <p>Responda ao meu quiz rápido (2 minutos) e receba um plano de ação personalizado + guia gratuito <strong>“3 Passos para Vender Mais em 30 Dias”</strong>.</p>
+    <a href="#quiz" class="btn">Fazer o Quiz</a>
+  </section>
+
+  <!-- About -->
   <section>
-    <h2>💬 Testemunhos de Clientes</h2>
-    <p>“A nossa casa ficou irreconhecível. E tudo dentro do orçamento!” – Pedro & Ana, Gaia</p>
-    <p>“Profissionais, rápidos e com atenção ao detalhe.” – Joana, Aveiro</p>
+    <h2>Quem é a Carla Ferreira?</h2>
+    <p>Sou mentora de negócios e ajudo pequenos empresários a ganhar confiança para apresentarem os seus serviços e produtos de forma autêntica e eficaz. Depois de anos a liderar projetos milionários em grandes empresas, trouxe esse know-how para ajudar empreendedores a aumentarem a sua presença e receitas.</p>
+    <a href="#sessao" class="btn">Marcar Sessão Gratuita</a>
   </section>
 
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>O que dizem os meus clientes</h2>
+    <div class="card">“Antes sentia-me perdida. Depois de trabalhar com a Carla, fechei 3 novos clientes em apenas 1 mês!” – Maria</div>
+    <div class="card">“Ganhei clareza na minha mensagem e confiança para apresentar o meu negócio.” – João</div>
+    <div class="card">“As técnicas da Carla ajudaram-me a transformar reuniões em vendas reais. Recomendo 100%!” – Ana</div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Como posso ajudá-lo(a)</h2>
+    <div class="card">🌱 Sessão de Descoberta Gratuita – 30 minutos para identificar os seus principais bloqueios.<br><br><a href="#sessao" class="btn">Agendar Sessão</a></div>
+    <div class="card">🚀 Programa “Confiança & Vendas” – 4 semanas para dominar a apresentação e fechar mais clientes.<br><br><a href="#programa" class="btn">Quero Saber Mais</a></div>
+    <div class="card">🎤 Workshops & Mentoria de Equipa – Treino prático para equipas que querem comunicar com impacto.<br><br><a href="#workshops" class="btn">Peça uma Proposta</a></div>
+  </section>
+
+  <!-- Blog -->
   <section>
-    <h2>📚 Últimos Artigos</h2>
-    <ul>
-      <li><a href="artigos.html">Quanto custa remodelar uma casa?</a></li>
-      <li><a href="artigos.html">Materiais ideais para renovar com estilo</a></li>
-    </ul>
-    <a href="artigos.html" class="cta">Ler mais artigos</a>
+    <h2>Aprenda estratégias práticas</h2>
+    <div class="card">Como Apresentar o Seu Negócio com Confiança</div>
+    <div class="card">5 Erros que Estão a Bloquear as Suas Vendas</div>
+    <div class="card">O Segredo das Pequenas Empresas de Sucesso</div>
+    <a href="#blog" class="btn">Ver Todos os Artigos</a>
   </section>
 
-  <section id="orcamento">
-    <h2>📞 Peça o Seu Orçamento</h2>
-    <p>Conte-nos o que precisa e entraremos em contacto rapidamente.</p>
-    <a class="cta" href="https://wa.me/351912345678">📲 Fale no WhatsApp</a>
+  <!-- Final CTA -->
+  <section style="text-align:center;">
+    <h2>Pronto(a) para atrair mais clientes com confiança?</h2>
+    <a href="#sessao" class="btn">Marcar Sessão Gratuita</a>
+    <p><a href="https://wa.me/351XXXXXXXXX">💬 Falar no WhatsApp</a></p>
   </section>
 
-  <a href="https://wa.me/351912345678" class="floating-button">✨ Orçamento Grátis</a>
-
+  <!-- Footer -->
   <footer>
-    © 2025 Remodelação Imbatível. Todos os direitos reservados.
+    <p>© 2025 Carla Ferreira | Mentoria de Negócios</p>
+    <p><a href="#home">Home</a> | <a href="#sobre">Sobre</a> | <a href="#servicos">Serviços</a> | <a href="#blog">Blog</a> | <a href="#contacto">Contacto</a></p>
+    <p>Transforme hoje a forma como apresenta o seu negócio.</p>
   </footer>
 
 </body>
